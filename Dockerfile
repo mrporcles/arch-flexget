@@ -1,5 +1,5 @@
-FROM binhex/arch-base
-MAINTAINER none
+FROM mrporcles/arch-base
+MAINTAINER mrporcles@gmail.com
 
 ADD setup/*.conf /etc/supervisor/conf.d/
 ADD setup/root/*.sh /root/
@@ -14,4 +14,3 @@ VOLUME ["/mnt"]
 
 EXPOSE 3539/tcp
 CMD ["/bin/bash", "/root/init.sh"]
-
