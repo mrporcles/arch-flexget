@@ -1,5 +1,5 @@
 FROM mrporcles/arch-base
-MAINTAINER mrporcles@gmail.com
+MAINTAINER Paul Wiggett <mrporcles@gmail.com>
 
 ADD setup/*.conf /etc/supervisor/conf.d/
 ADD setup/root/*.sh /root/
