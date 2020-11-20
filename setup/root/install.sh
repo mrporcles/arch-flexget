@@ -7,6 +7,7 @@ set -e
 pacman_packages="python python-setuptools python-pip supervisor"
 
 # install pre-reqs
+pacman-key --refresh-keys
 pacman -Sy --needed $pacman_packages --noconfirm
 pip install flexget
 
